@@ -1,0 +1,280 @@
+{
+"version": 1,
+"author": "Sandro Ferreira",
+"editor": "wokwi",
+"parts": [
+{
+"type": "wokwi-esp32-devkit-v1",
+"id": "esp32",
+"top": 0,
+"left": 0,
+"attrs": {}
+},
+{
+"type": "wokwi-dht22",
+"id": "dht1",
+"top": -120,
+"left": 220,
+"attrs": {}
+},
+{
+"type": "wokwi-potentiometer",
+"id": "pot_luminosidade",
+"top": 130,
+"left": 240,
+"attrs": {
+"value": "512"
+}
+},
+{
+"type": "wokwi-potentiometer",
+"id": "pot_umidade_solo",
+"top": 250,
+"left": 240,
+"attrs": {
+"value": "700"
+}
+},
+{
+"type": "wokwi-potentiometer",
+"id": "pot_qualidade_ar",
+"top": 370,
+"left": 240,
+"attrs": {
+"value": "400"
+}
+},
+{
+"type": "wokwi-potentiometer",
+"id": "pot_variavel",
+"top": 490,
+"left": 240,
+"attrs": {
+"value": "300"
+}
+},
+{
+"type": "wokwi-led",
+"id": "led1",
+"top": -120,
+"left": -180,
+"attrs": {
+"color": "red"
+}
+},
+{
+"type": "wokwi-resistor",
+"id": "res_led",
+"top": -70,
+"left": -130,
+"attrs": {
+"value": "220"
+}
+},
+{
+"type": "wokwi-buzzer",
+"id": "buzzer1",
+"top": 40,
+"left": -190,
+"attrs": {}
+},
+{
+"type": "wokwi-relay-module",
+"id": "relay1",
+"top": 180,
+"left": -220,
+"attrs": {}
+}
+],
+"connections": [
+[
+"esp32:3V3",
+"dht1:VCC",
+"red",
+[
+"h80",
+"v-80"
+]
+],
+[
+"esp32:GND.1",
+"dht1:GND",
+"black",
+[
+"h90",
+"v-70"
+]
+],
+[
+"esp32:D4",
+"dht1:SDA",
+"green",
+[
+"h100",
+"v-60"
+]
+],
+[
+"esp32:D34",
+"pot_luminosidade:SIG",
+"green",
+[
+"h100"
+]
+],
+[
+"esp32:3V3",
+"pot_luminosidade:VCC",
+"red",
+[
+"h120"
+]
+],
+[
+"esp32:GND.1",
+"pot_luminosidade:GND",
+"black",
+[
+"h130"
+]
+],
+[
+"esp32:D35",
+"pot_umidade_solo:SIG",
+"green",
+[
+"h100"
+]
+],
+[
+"esp32:3V3",
+"pot_umidade_solo:VCC",
+"red",
+[
+"h120"
+]
+],
+[
+"esp32:GND.1",
+"pot_umidade_solo:GND",
+"black",
+[
+"h130"
+]
+],
+[
+"esp32:D32",
+"pot_qualidade_ar:SIG",
+"green",
+[
+"h100"
+]
+],
+[
+"esp32:3V3",
+"pot_qualidade_ar:VCC",
+"red",
+[
+"h120"
+]
+],
+[
+"esp32:GND.1",
+"pot_qualidade_ar:GND",
+"black",
+[
+"h130"
+]
+],
+[
+"esp32:D33",
+"pot_variavel:SIG",
+"green",
+[
+"h100"
+]
+],
+[
+"esp32:3V3",
+"pot_variavel:VCC",
+"red",
+[
+"h120"
+]
+],
+[
+"esp32:GND.1",
+"pot_variavel:GND",
+"black",
+[
+"h130"
+]
+],
+[
+"esp32:D2",
+"res_led:1",
+"green",
+[
+"h-80"
+]
+],
+[
+"res_led:2",
+"led1:A",
+"green",
+[
+"h-40"
+]
+],
+[
+"led1:C",
+"esp32:GND.2",
+"black",
+[
+"v80",
+"h120"
+]
+],
+[
+"esp32:D5",
+"buzzer1:1",
+"green",
+[
+"h-90"
+]
+],
+[
+"buzzer1:2",
+"esp32:GND.2",
+"black",
+[
+"h100"
+]
+],
+[
+"esp32:D18",
+"relay1:IN",
+"green",
+[
+"h-100"
+]
+],
+[
+"esp32:5V",
+"relay1:VCC",
+"red",
+[
+"h-100"
+]
+],
+[
+"esp32:GND.2",
+"relay1:GND",
+"black",
+[
+"h-100"
+]
+]
+],
+"dependencies": {}
+}
