@@ -60,8 +60,6 @@ sistema-iot-monitoramento-ambiental-esp32/
 
 │   ├── licoes-aprendidas.md
 
-│   ├── evidencias.md
-
 │   └── estrutura-do-repositorio.md
 
 └── data/
