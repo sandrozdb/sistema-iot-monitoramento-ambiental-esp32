@@ -1,3 +1,23 @@
+<p align="center"><img src="assets/cover.svg" alt="Monitoramento ambiental IoT com ESP32" width="100%"></p>
+
+## 🔎 Resumo executivo
+
+Sistema IoT para coletar variáveis ambientais, identificar condições fora dos limites e enviar dados à nuvem. O projeto integra sensores, ESP32, atuadores, Wi-Fi e ThingSpeak em um fluxo único de monitoramento e resposta.
+
+**Diferenciais:** múltiplas variáveis ambientais, alertas locais, histórico em nuvem, compilação automática e documentação de segurança para chaves de API.
+
+### Indicadores recomendados
+
+| Indicador | O que demonstra |
+| --- | --- |
+| Taxa de envio bem-sucedido | Confiabilidade da integração |
+| Leituras fora dos limites | Frequência de risco ambiental |
+| Disponibilidade do dispositivo | Continuidade do monitoramento |
+| Intervalo médio entre leituras | Regularidade da coleta |
+| Tempo entre evento e alerta | Velocidade de resposta |
+
+> Os indicadores estão preparados para uma futura avaliação do protótipo; não há números inventados no portfólio.
+
 # 🌎 Sistema IoT de Monitoramento Ambiental com ESP32
 
 ## 📌 Sobre o Projeto

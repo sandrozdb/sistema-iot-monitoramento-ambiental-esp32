@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">Monitoramento Ambiental IoT</title><desc id="desc">Capa do projeto ESP32 com ThingSpeak</desc>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0c1b33"/><stop offset="1" stop-color="#155e75"/></linearGradient></defs>
+  <rect width="1280" height="360" rx="28" fill="url(#g)"/><circle cx="1120" cy="280" r="220" fill="#22d3ee" opacity=".12"/><circle cx="1170" cy="30" r="120" fill="#a3e635" opacity=".10"/>
+  <text x="70" y="105" fill="#67e8f9" font-family="Arial, sans-serif" font-size="24" font-weight="700">SENSORES • NUVEM • AUTOMAÇÃO</text>
+  <text x="70" y="180" fill="white" font-family="Arial, sans-serif" font-size="50" font-weight="700">Monitoramento Ambiental IoT</text>
+  <text x="70" y="235" fill="#dbeafe" font-family="Arial, sans-serif" font-size="28">ESP32, sensores e dados em tempo real</text>
+  <rect x="70" y="275" width="110" height="42" rx="21" fill="#0369a1"/><text x="98" y="303" fill="white" font-family="Arial" font-size="20" font-weight="700">ESP32</text>
+  <rect x="195" y="275" width="150" height="42" rx="21" fill="#0891b2"/><text x="220" y="303" fill="white" font-family="Arial" font-size="20" font-weight="700">ThingSpeak</text>
+  <rect x="360" y="275" width="105" height="42" rx="21" fill="#65a30d"/><text x="390" y="303" fill="white" font-family="Arial" font-size="20" font-weight="700">C++</text>
+</svg>
