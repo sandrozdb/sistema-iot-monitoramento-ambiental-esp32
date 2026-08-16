@@ -233,3 +233,26 @@ Estudante de Inteligência Artificial e Automação Digital
 📧 E-mail: [sandrozdb@gmail.com](mailto:sandrozdb@gmail.com)
 💼 LinkedIn: https://linkedin.com/in/sandrozdb
 🐙 GitHub: https://github.com/sandrozdb
+
+---
+
+## ▶️ Como Executar
+
+1. Instale o VS Code e a extensão PlatformIO.
+2. Abra a pasta do projeto.
+3. Substitua `SUA_API_KEY_AQUI` por uma chave de escrita do seu canal ThingSpeak apenas no ambiente local.
+4. Execute **PlatformIO: Build**, faça o upload e abra o monitor serial em `115200` baud.
+
+Pelo terminal:
+
+```bash
+pio run
+pio run --target upload
+pio device monitor
+```
+
+## 🔐 Segurança e qualidade
+
+- A chave presente no código é apenas um placeholder.
+- Nunca publique uma chave real do ThingSpeak.
+- O GitHub Actions compila o firmware automaticamente em cada pull request e atualização da `main`.
