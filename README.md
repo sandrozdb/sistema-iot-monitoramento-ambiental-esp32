@@ -22,6 +22,24 @@ flowchart TD
     F --> G[Gráficos e histórico]
 ```
 
+## Demonstração real
+
+### Simulação no Wokwi
+
+[![Simulação do sistema IoT em execução no Wokwi](assets/wokwi-simulacao.svg)](https://wokwi.com/projects/466138169004087297)
+
+*Circuito real do projeto em execução no Wokwi, com ESP32, cinco entradas analógicas, LED, buzzer e monitor serial.*
+
+[Abrir a simulação no Wokwi](https://wokwi.com/projects/466138169004087297)
+
+### Canal no ThingSpeak
+
+[![Canal do projeto configurado no ThingSpeak](assets/thingspeak-canal.svg)](https://thingspeak.mathworks.com/channels/3402588)
+
+*Canal real configurado com cinco campos para visualização. No momento da captura, ainda não havia medições registradas.*
+
+[Abrir o canal público no ThingSpeak](https://thingspeak.mathworks.com/channels/3402588)
+
 ## Variáveis e respostas
 
 | Elemento | Função |
@@ -76,7 +94,8 @@ Nunca substitua o placeholder por uma chave real antes de publicar o código.
 ```text
 ├── src/main.cpp          # firmware do ESP32
 ├── platformio.ini        # placa e dependências
-├── assets/cover.svg
+├── assets/cover.svg      # capa do projeto
+├── assets/*-*.svg        # evidências visuais reais
 ├── .github/workflows/    # compilação automática
 └── README.md
 ```
@@ -98,7 +117,7 @@ Nunca substitua o placeholder por uma chave real antes de publicar o código.
 
 ## Próximos passos
 
-- adicionar capturas do Wokwi e ThingSpeak;
+- registrar as primeiras medições reais no ThingSpeak;
 - coletar indicadores em um teste controlado;
 - enviar alertas por e-mail ou aplicativo;
 - integrar um dashboard analítico;
