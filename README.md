@@ -1,269 +1,67 @@
 <p align="center"><img src="assets/cover.svg" alt="Monitoramento ambiental IoT com ESP32" width="100%"></p>
 
-## 🔎 Resumo executivo
-
-Sistema IoT para coletar variáveis ambientais, identificar condições fora dos limites e enviar dados à nuvem. O projeto integra sensores, ESP32, atuadores, Wi-Fi e ThingSpeak em um fluxo único de monitoramento e resposta.
-
-**Diferenciais:** múltiplas variáveis ambientais, alertas locais, histórico em nuvem, compilação automática e documentação de segurança para chaves de API.
-
-### Indicadores recomendados
-
-| Indicador | O que demonstra |
-| --- | --- |
-| Taxa de envio bem-sucedido | Confiabilidade da integração |
-| Leituras fora dos limites | Frequência de risco ambiental |
-| Disponibilidade do dispositivo | Continuidade do monitoramento |
-| Intervalo médio entre leituras | Regularidade da coleta |
-| Tempo entre evento e alerta | Velocidade de resposta |
-
-> Os indicadores estão preparados para uma futura avaliação do protótipo; não há números inventados no portfólio.
-
-# 🌎 Sistema IoT de Monitoramento Ambiental com ESP32
-
-## 📌 Sobre o Projeto
-
-Este projeto apresenta o desenvolvimento de uma solução IoT baseada no microcontrolador ESP32 para monitoramento ambiental em tempo real.
-
-O sistema integra sensores para coleta de dados de temperatura, umidade, luminosidade, qualidade do ar, umidade do solo e outras variáveis ambientais. Os dados coletados são processados pelo ESP32 e enviados para uma plataforma em nuvem, permitindo visualização, acompanhamento remoto e análise contínua das informações.
-
-O projeto foi desenvolvido no contexto acadêmico da UniFECAF, aplicando conceitos de Internet das Coisas, sistemas embarcados, sensores, comunicação de dados, automação, computação em nuvem e integração entre hardware e software.
-
----
-
-## 🎯 Objetivos
-
-* Desenvolver uma solução IoT para monitoramento ambiental.
-* Utilizar o ESP32 como microcontrolador principal.
-* Integrar sensores para coleta de dados ambientais.
-* Processar informações em tempo real.
-* Enviar dados para uma plataforma em nuvem.
-* Permitir acompanhamento remoto das variáveis monitoradas.
-* Aplicar conceitos de sistemas embarcados, IoT e automação.
-* Demonstrar a integração entre hardware, software e nuvem.
-
----
-
-## 🧠 Problema Identificado
-
-Ambientes residenciais, industriais, agrícolas e urbanos podem exigir acompanhamento constante de variáveis ambientais.
-
-A ausência de monitoramento automatizado dificulta a identificação de alterações importantes, como aumento de temperatura, baixa umidade, luminosidade inadequada, variações na qualidade do ar ou baixa umidade do solo.
-
-Com uma solução IoT, é possível automatizar a coleta de dados, visualizar informações remotamente e apoiar decisões com base em dados reais.
-
----
-
-## 💡 Solução Proposta
-
-A solução proposta utiliza o ESP32 conectado a sensores para coletar informações ambientais em tempo real.
-
-Os dados são processados pelo microcontrolador e enviados para a plataforma ThingSpeak, permitindo o monitoramento remoto por meio de gráficos e registros históricos.
-
-O projeto também conta com atuadores, como LED, buzzer ou relé, que podem ser acionados quando determinados valores ultrapassam limites definidos.
-
----
-
-## ⚙️ Tecnologias Utilizadas
-
-* ESP32
-* C++
-* Sensores
-* Internet das Coisas
-* Sistemas Embarcados
-* ThingSpeak
-* Wokwi
-* Tinkercad
-* Wi-Fi
-* Automação
-* Computação em Nuvem
-
----
-
-## 🔧 Componentes do Sistema
-
-* ESP32
-* Sensor de temperatura e umidade
-* Sensor de luminosidade
-* Sensor de umidade do solo
-* Sensor de qualidade do ar
-* Potenciômetro para simulação de variável analógica
-* LED para sinalização visual
-* Buzzer para alerta sonoro
-* Relé para acionamento de carga
-* Plataforma ThingSpeak
-* Simulação no Wokwi
-* Modelagem no Tinkercad
-
----
-
-## 🔄 Funcionamento do Sistema
-
-1. Os sensores coletam dados ambientais.
-2. O ESP32 recebe os sinais dos sensores.
-3. Os dados são processados pelo microcontrolador.
-4. O sistema verifica se os valores estão dentro dos limites definidos.
-5. Caso algum valor esteja fora do padrão, os atuadores podem ser acionados.
-6. As informações são enviadas para a nuvem via Wi-Fi.
-7. A plataforma ThingSpeak exibe os dados para acompanhamento remoto.
-8. Os dados podem ser analisados posteriormente por meio de gráficos e histórico.
-
----
-
-## 🏗️ Arquitetura da Solução
-
-┌──────────────────────────────┐
-│ Sensores Ambientais          │
-│ Temperatura, Umidade, Luz    │
-└───────────────┬──────────────┘
-↓
-┌──────────────────────────────┐
-│ ESP32                        │
-│ Processamento dos Dados      │
-└───────────────┬──────────────┘
-↓
-┌──────────────────────────────┐
-│ Atuadores                    │
-│ LED, Buzzer e Relé           │
-└───────────────┬──────────────┘
-↓
-┌──────────────────────────────┐
-│ Wi-Fi                        │
-│ Comunicação com a Internet   │
-└───────────────┬──────────────┘
-↓
-┌──────────────────────────────┐
-│ ThingSpeak                   │
-│ Monitoramento em Nuvem       │
-└──────────────────────────────┘
-
----
-
-## 📊 Variáveis Monitoradas
-
-| Variável           | Descrição                                  |
-| ------------------ | ------------------------------------------ |
-| Temperatura        | Mede a temperatura do ambiente             |
-| Umidade            | Mede a umidade relativa do ar              |
-| Luminosidade       | Identifica o nível de luz do ambiente      |
-| Umidade do solo    | Monitora a condição do solo                |
-| Qualidade do ar    | Simula ou mede indicadores ambientais      |
-| Variável analógica | Representada por potenciômetro para testes |
-
----
-
-## 🚨 Atuadores
-
-O sistema pode utilizar atuadores para indicar situações fora dos limites definidos.
-
-| Atuador | Função                                         |
-| ------- | ---------------------------------------------- |
-| LED     | Sinalização visual                             |
-| Buzzer  | Alerta sonoro                                  |
-| Relé    | Acionamento de cargas ou dispositivos externos |
-
----
-
-## ☁️ Integração com ThingSpeak
-
-O ThingSpeak é utilizado como plataforma em nuvem para receber, armazenar e exibir os dados coletados pelo ESP32.
-
-A plataforma permite:
-
-* Visualizar dados em tempo real
-* Acompanhar gráficos
-* Armazenar histórico de medições
-* Analisar tendências ambientais
-* Monitorar remotamente o funcionamento do sistema
-
----
-
-## 🧪 Simulação
-
-O projeto foi simulado no Wokwi, permitindo testar o funcionamento do ESP32, sensores e atuadores em ambiente virtual.
-
-Também foi utilizado o Tinkercad para representação visual e modelagem do gabinete do sistema.
-
----
-
-## ✅ Benefícios do Projeto
-
-* Monitoramento ambiental em tempo real
-* Coleta automatizada de dados
-* Integração entre hardware e software
-* Visualização remota em nuvem
-* Aplicação prática de IoT
-* Possibilidade de alertas automáticos
-* Baixo custo de implementação
-* Escalabilidade para diferentes ambientes
-
----
-
-## 🚀 Possíveis Aplicações
-
-* Casas inteligentes
-* Agricultura inteligente
-* Monitoramento ambiental
-* Automação residencial
-* Ambientes industriais
-* Escolas e laboratórios
-* Projetos acadêmicos
-* Cidades inteligentes
-
----
-
-## 📚 Aprendizados
-
-Durante o desenvolvimento deste projeto, foram aplicados conhecimentos de:
-
-* Internet das Coisas
-* Sistemas embarcados
-* Programação em C++
-* Microcontroladores ESP32
-* Sensores analógicos e digitais
-* Comunicação Wi-Fi
-* Computação em nuvem
-* Automação
-* Simulação de circuitos
-* Monitoramento remoto
-* Integração entre hardware e software
-
----
-
-## 🔮 Melhorias Futuras
-
-* Adicionar dashboard em Power BI
-* Integrar alertas por e-mail
-* Enviar notificações automáticas
-* Utilizar banco de dados próprio
-* Implementar aplicativo mobile
-* Adicionar mais sensores físicos
-* Criar gabinete físico impresso em 3D
-* Aplicar IA para análise de padrões ambientais
-* Integrar com sistemas de automação residencial
-
----
-
-## 👨‍💻 Autor
-
-**Sandro Ferreira**
-
-Estudante de Engenharia da Computação
-Estudante de Inteligência Artificial e Automação Digital
-
-📧 E-mail: [sandrozdb@gmail.com](mailto:sandrozdb@gmail.com)
-💼 LinkedIn: https://linkedin.com/in/sandrozdb
-🐙 GitHub: https://github.com/sandrozdb
-
----
-
-## ▶️ Como Executar
+# Sistema IoT de Monitoramento Ambiental com ESP32
+
+Sistema que coleta variáveis ambientais, identifica condições fora dos limites, aciona alertas locais e envia os dados ao ThingSpeak para acompanhamento remoto.
+
+## Problema
+
+Ambientes agrícolas, residenciais e industriais precisam acompanhar temperatura, umidade, luminosidade, qualidade do ar e condição do solo. Sem automação, mudanças importantes podem ser percebidas tarde demais.
+
+## Solução
+
+O ESP32 centraliza as leituras, aplica regras de decisão e conecta sensores, atuadores e nuvem em um único fluxo.
+
+```mermaid
+flowchart TD
+    A[Sensores ambientais] --> B[ESP32]
+    B --> C{Valor fora do limite?}
+    C -->|Sim| D[LED, buzzer ou relé]
+    C -->|Não| E[Operação normal]
+    B --> F[ThingSpeak]
+    F --> G[Gráficos e histórico]
+```
+
+## Variáveis e respostas
+
+| Elemento | Função |
+|---|---|
+| DHT22 | Temperatura e umidade |
+| Sensor de luminosidade | Nível de luz |
+| Sensor de solo | Umidade do solo |
+| Sensor de ar | Indicador de qualidade do ar |
+| Potenciômetro | Simulação analógica |
+| LED e buzzer | Alertas locais |
+| Relé | Acionamento de carga |
+| ThingSpeak | Histórico e visualização |
+
+## Diferenciais
+
+- múltiplas variáveis ambientais;
+- integração entre hardware, software e nuvem;
+- alertas e acionamento automático;
+- simulação no Wokwi;
+- firmware compilado automaticamente no GitHub Actions;
+- proteção para chaves do ThingSpeak.
+
+## Indicadores para um piloto
+
+| Indicador | Decisão apoiada |
+|---|---|
+| Taxa de envio bem-sucedido | Medir confiabilidade |
+| Leituras fora dos limites | Identificar riscos |
+| Disponibilidade do dispositivo | Medir continuidade |
+| Intervalo entre leituras | Verificar regularidade |
+| Tempo entre evento e alerta | Avaliar resposta |
+
+> Os indicadores estão definidos, mas o portfólio não apresenta números sem coleta real.
+
+## Como executar
 
 1. Instale o VS Code e a extensão PlatformIO.
-2. Abra a pasta do projeto.
-3. Substitua `SUA_API_KEY_AQUI` por uma chave de escrita do seu canal ThingSpeak apenas no ambiente local.
-4. Execute **PlatformIO: Build**, faça o upload e abra o monitor serial em `115200` baud.
-
-Pelo terminal:
+2. Abra o projeto.
+3. Configure uma chave de escrita do ThingSpeak apenas no ambiente local.
+4. Compile, envie o firmware e abra o monitor serial.
 
 ```bash
 pio run
@@ -271,8 +69,43 @@ pio run --target upload
 pio device monitor
 ```
 
-## 🔐 Segurança e qualidade
+Nunca substitua o placeholder por uma chave real antes de publicar o código.
 
-- A chave presente no código é apenas um placeholder.
-- Nunca publique uma chave real do ThingSpeak.
-- O GitHub Actions compila o firmware automaticamente em cada pull request e atualização da `main`.
+## Estrutura
+
+```text
+├── src/main.cpp          # firmware do ESP32
+├── platformio.ini        # placa e dependências
+├── assets/cover.svg
+├── .github/workflows/    # compilação automática
+└── README.md
+```
+
+## Aplicações possíveis
+
+- agricultura inteligente;
+- casas e escolas;
+- laboratórios;
+- ambientes industriais;
+- monitoramento ambiental;
+- automação residencial.
+
+## Segurança e qualidade
+
+- a chave presente no código é apenas um placeholder;
+- segredos e credenciais locais não devem ser versionados;
+- o GitHub Actions compila o firmware em PRs e atualizações da `main`.
+
+## Próximos passos
+
+- adicionar capturas do Wokwi e ThingSpeak;
+- coletar indicadores em um teste controlado;
+- enviar alertas por e-mail ou aplicativo;
+- integrar um dashboard analítico;
+- testar sensores físicos e gabinete impresso em 3D.
+
+## Autor
+
+**Sandro Ferreira** — estudante de Engenharia da Computação e de Inteligência Artificial e Automação Digital.
+
+[LinkedIn](https://linkedin.com/in/sandrozdb) · [GitHub](https://github.com/sandrozdb)
