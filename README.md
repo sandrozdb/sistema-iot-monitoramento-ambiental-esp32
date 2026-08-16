@@ -34,7 +34,7 @@ flowchart TD
 
 ### Canal no ThingSpeak
 
-[![Canal do projeto configurado no ThingSpeak](assets/thingspeak-canal.svg)](https://thingspeak.mathworks.com/channels/3402588)
+[![Canal do projeto configurado no ThingSpeak](assets/thingspeak-canal-recortado.svg)](https://thingspeak.mathworks.com/channels/3402588)
 
 *Canal real configurado com cinco campos para visualização. A captura registra a simulação inicial do projeto, realizada antes do envio das medições demonstrativas.*
 
